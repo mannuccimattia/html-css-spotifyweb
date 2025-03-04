@@ -10,7 +10,7 @@ body{
   color: #7e7e7e;
 }
 
-.container-xs{
+.container{
   padding: 5vw;
 }
 
@@ -105,7 +105,8 @@ header{
 
   /* recently-played */
 #recently-played{
-  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .content h3, 
@@ -114,7 +115,7 @@ header{
 }
 
 .card{
-  width: 50%;
+  width: 49%;
 }
 
 .card img{
