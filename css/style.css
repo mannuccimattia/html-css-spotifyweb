@@ -29,6 +29,10 @@ a{
   color: #7e7e7e;
 }
 
+img{
+  width: 100%;
+}
+
 /* ******** UTILITY ******** */
 /* font */
 .font-2vw{
@@ -66,12 +70,40 @@ main{
   display: flex;
 }
 
+/*  sidebar */
 #sidebar{
   width: 50px;
   height: 100%;
   background-color: #000;
+  padding: 5px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.nav-list ul{
+  list-style-type: none;
+  padding: 3px;
+}
+
+.nav-list ul li{
+  margin-top: 3px;
+}
+
+#download img{
+  width: 50%;
+  margin: 20px 0;
+  position: relative;
+  translate: 50% 0;
+}
+
+#profile img{
+  border-radius: 50%;
+  background-color: #808080;
+  padding: 0 1px;
+}
+
+/* header */
 header{
   position: sticky;
   height: 80px;
@@ -94,7 +126,7 @@ header{
   border-radius: 20px;
 }
 
-  /* #main-content */
+/* #main-content */
 #main-content{
   width: calc(100vw - 50px);
   height: 100%;
@@ -136,7 +168,7 @@ header{
   justify-content: space-between;
 }
 
-  /* recently-played */
+/* recently-played */
 .content h3, 
 .content h5{
   color: #fff;
@@ -147,7 +179,6 @@ header{
 }
 
 .card img{
-  width: 100%;
   object-fit: cover;
 }
 
@@ -161,7 +192,7 @@ header{
   font-weight: 600;
 }
 
-  /* popular */
+/* popular */
 #popular img{
   border-radius: 50%;
 }
