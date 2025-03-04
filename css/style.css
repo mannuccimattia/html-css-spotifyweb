@@ -26,6 +26,7 @@ body{
 
 a{
   text-decoration: none;
+  color: #7e7e7e;
 }
 
 /* ******** UTILITY ******** */
@@ -76,6 +77,21 @@ header{
   height: 80px;
   background-color: #080B12;
   top: 0;
+  text-align: end;
+}
+
+#upgrade{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  translate: 0 -50%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
 }
 
   /* #main-content */
@@ -141,7 +157,6 @@ header{
 }
 
 .pl-info a h6{
-  color: #7e7e7e;
   font-size: 10px;
   font-weight: 600;
 }
