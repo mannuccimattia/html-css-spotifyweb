@@ -8,6 +8,8 @@
 body{
   font-family: Montserrat, sans-serif;
   color: #7e7e7e;
+  background-color: #282828;
+  height: 100vh;
 }
 
 .container{
@@ -41,6 +43,14 @@ img{
 
 .font-12{
   font-size: 12px;
+}
+
+.font-14{
+  font-size: 14px;
+}
+
+.font-20{
+  font-size: 20px;
 }
 
 /* width */
@@ -78,8 +88,16 @@ img{
   display: flex;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .j-content-between{
   justify-content: space-between;
+}
+
+.j-content-center{
+  justify-content: center;
 }
 
 .j-content-around{
@@ -93,7 +111,7 @@ img{
 /* ******** PAGE STYLE ******** */
 /* main */
 main{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 85px);
   background-color: #141922;
   display: flex;
 }
@@ -237,13 +255,13 @@ footer{
 
 #footer-container .w-foot{
   height: 60px;
-  /* background-color: teal;
-  border: 1px solid black; */
+  /* background-color: teal; */
+  border: 1px solid black;
 }
 
-#footer-container .w-25{
-  padding: 3%;
-  margin-right: 5px;
+footer img[alt="sinister"] {
+  max-height: 3vh;
+  max-width: 3vh;
 }
 
 footer a h5{
@@ -253,3 +271,45 @@ footer a h5{
 footer a h6{
   font-weight: 500;
 }
+
+.player{
+  text-align: center;
+  list-style-type: none;
+}
+
+.player i{
+  color: #fff;
+}
+
+.fa-circle-play{
+  margin: 0 10px;
+}
+
+.player-panel{
+  font-size: 8px;
+  color: #fff;
+  position: relative;
+}
+
+.player-bar, 
+.player-bar-over{
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.player-bar{
+  background-color: #7e7e7e;
+  width: 62%;
+}
+
+.player-bar-over{
+  background-color: #d3d3d3;
+  width: 14%;
+  position: absolute;
+  left: 17%;
+}
+
+
+
