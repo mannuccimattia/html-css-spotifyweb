@@ -8,8 +8,7 @@
 body{
   font-family: Montserrat, sans-serif;
   color: #7e7e7e;
-  background-color: #282828;
-  height: 100vh;
+  /* background-color: #282828; */
 }
 
 .container{
@@ -71,6 +70,10 @@ img{
 }
 
 /* margin */
+.mx-10{
+  margin: 0 10px;
+}
+
 .mb-10{
   margin-bottom: 10px;
 }
@@ -83,7 +86,7 @@ img{
   margin-bottom: 30px;
 }
 
-/* display + related */
+/* layout + positioning */
 .d-flex{
   display: flex;
 }
@@ -108,10 +111,14 @@ img{
   align-items: center;
 }
 
+.pos-relative{
+  position: relative;
+}
+
 /* ******** PAGE STYLE ******** */
 /* main */
 main{
-  height: calc(100vh - 85px);
+  height: calc(100vh - 61px);
   background-color: #141922;
   display: flex;
 }
@@ -245,18 +252,11 @@ header{
 
 /* footer */
 footer{
-  height: 80px;
   background-color: #282828;
 }
 
 #footer-container{
   padding: 10px 5px;
-}
-
-#footer-container .w-foot{
-  height: 60px;
-  /* background-color: teal; */
-  border: 1px solid black;
 }
 
 footer img[alt="sinister"] {
@@ -285,18 +285,19 @@ footer a h6{
   margin: 0 10px;
 }
 
-.player-panel{
+.player-panel,
+.volume-panel{
   font-size: 8px;
   color: #fff;
-  position: relative;
 }
 
 .player-bar, 
-.player-bar-over{
+.player-bar-over,
+.volume-bar,
+.volume-bar-over{
   height: 3px;
   border: none;
   border-radius: 6px;
-  align-self: center;
 }
 
 .player-bar{
@@ -304,12 +305,23 @@ footer a h6{
   width: 62%;
 }
 
-.player-bar-over{
+.player-bar-over,
+.volume-bar-over{
   background-color: #d3d3d3;
-  width: 14%;
+  width: 20%;
   position: absolute;
-  left: 17%;
+  left: 0%;
 }
 
+.player-bar{
+  align-self: center;
+}
 
+.volume-panel{
+  height: 100%;
+}
 
+.volume-bar{
+  background-color: #7e7e7e;
+  width: 52%;
+}
