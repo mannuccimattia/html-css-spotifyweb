@@ -202,6 +202,7 @@ header{
   background-color: #080B12;
   top: 0;
   text-align: end;
+  z-index: 5;
 }
 
 #upgrade{
