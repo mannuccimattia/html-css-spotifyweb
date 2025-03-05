@@ -28,7 +28,7 @@
                 <div class="current-page-bar-vertical"></div>
                 <a href="">
                   <img src="./img/home.svg" alt="home">
-                  <span class="nav-details">Home</span>
+                  <span id="home" class="nav-details">Home</span>
                 </a>
               </li>
               <li>
@@ -78,6 +78,7 @@
       </div>
       <!-- main-content -->
       <div id="main-content">
+        <!-- header -->
         <header>
           <a href="" id="upgrade">EFFETTUA L'UPGRADE</a>
         </header>
@@ -233,6 +234,8 @@
           <div class="mr-10 font-12">
             <a href="">
               <div><i class="fa-regular fa-heart"></i></div>
+            </a>
+            <a href="">
               <div><i class="fa-regular fa-folder"></i></div>
             </a>
           </div>
@@ -267,19 +270,21 @@
           </ul>
           <div class="player-panel d-flex j-content-center">
             <div>0:25</div>
-            <div class="player-bar pos-relative">
+            <a href="" class="player-bar pos-relative">
               <div class="player-bar-over"></div>
-            </div>
+              <div class="cursor"></div>
+            </a>
             <div>4:35</div>
           </div>
         </div>
         <div>
           <div class="volume-panel d-flex j-content-end align-items-center">
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-desktop"></i>
-            <i class="fa-solid fa-volume-high"></i>
+            <a href=""><i class="fa-solid fa-list-ul"></i></a>
+            <a href=""><i class="fa-solid fa-desktop"></i></a>
+            <a href=""><i class="fa-solid fa-volume-high"></i></a>
             <div class="volume-bar pos-relative">
               <div class="volume-bar-over"></div>
+              <div class="cursor"></div>
             </div>
             
           </div>

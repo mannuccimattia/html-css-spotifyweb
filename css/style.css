@@ -30,6 +30,11 @@ a{
   color: #7e7e7e;
 }
 
+a:hover{
+  color: #fff;
+}
+
+
 img{
   width: 100%;
 }
@@ -166,6 +171,15 @@ img[alt="logo"]{
   display: none;
 }
 
+.playlist a:hover .fa-plus{
+  background-color: #fff;
+}
+
+ a #home,
+ .playlist h4{
+  color: #fff;
+}
+
 .nav-list ul,
 .playlist ul{
   padding: 3px;
@@ -203,12 +217,14 @@ img[alt="logo"]{
   display: none;
 }
 
-
-
 #profile img{
   border-radius: 50%;
   background-color: #808080;
   padding: 0 1px;
+}
+
+#profile span:hover{
+  text-decoration: underline;
 }
 
 /* header */
@@ -232,6 +248,10 @@ header{
   padding: 10px 30px;
   border: 1px solid white;
   border-radius: 20px;
+}
+
+#upgrade:hover{
+  transform: scale(1.1);
 }
 
 /* #main-content */
@@ -335,6 +355,10 @@ footer img[alt="sinister"] {
   font-size: 11px;
 }
 
+.now-playing h6:hover{
+  text-decoration: underline;
+}
+
 footer a h5{
   color: #fff;
 }
@@ -355,12 +379,16 @@ footer a h6{
   margin: 0 20px;
 }
 
+.fa-circle-play:hover{
+  transform: scale(1.2);
+}
+
 .fa-rotate-right{
   margin-left: 12px;
 }
 
 .player-panel,
-.volume-panel{
+.volume-panel a{
   font-size: 9px;
   color: #fff;
 }
@@ -386,6 +414,29 @@ footer a h6{
   width: 20%;
   position: absolute;
   left: 0%;
+  margin: 0;
+}
+
+.player-bar-over:hover,
+.volume-bar-over:hover{
+  background-color: yellowgreen;
+}
+
+.cursor{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 19%;
+  translate: 0 -26%;
+  margin: 0;
+  display: none;
+}
+
+.player-bar-over:hover + .cursor,
+.volume-bar-over:hover + .cursor{
+  display: block;
 }
 
 .player-bar{
