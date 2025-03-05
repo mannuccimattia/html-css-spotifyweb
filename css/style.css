@@ -40,6 +40,10 @@ ul{
 
 /* ******** UTILITY ******** */
 /* font */
+.font-10{
+  font-size: 10px;
+}
+
 .font-12{
   font-size: 12px;
 }
@@ -484,6 +488,10 @@ footer a h6{
     width: 33%;
   }
 
+  .content h5{
+    font-size: 16px;
+  }
+
   /* footer */
   footer img[alt="sinister"] {
     max-height: 6vw;
@@ -530,6 +538,14 @@ footer a h6{
   #popular{
     gap: 0 1%;
   }
+
+  .content h5{
+    font-size: 12px;
+  }
+
+  .pl-info a h6{
+    font-size: 8px;
+  }
   
   /* footer */
   footer a div{
@@ -551,5 +567,45 @@ footer a h6{
 
   .volume-panel i{
     margin-right: 15px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width:992px){
+  .container{
+    padding: 2vw;
+  }
+
+  /* main-content */
+  #top-list{
+    flex-wrap: nowrap;
+    max-width: 70%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+
+  #top-list li{
+    width: 16%;
+    font-size: 0.8vw;
+  }
+
+  /* recently-played */
+  .card{
+    width: 16%;
+  }
+
+  #recently-played,
+  #for-you,
+  #popular{
+    gap: 0 0.8%;
+  }
+
+  .content h5{
+    font-size: 11px;
+  }
+
+  /* footer */
+  .volume-bar{
+    width: 10vw;
   }
 }
