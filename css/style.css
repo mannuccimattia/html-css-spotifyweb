@@ -40,10 +40,6 @@ ul{
 
 /* ******** UTILITY ******** */
 /* font */
-.font-2vw{
-  font-size: 2vw;
-}
-
 .font-12{
   font-size: 12px;
 }
@@ -246,11 +242,12 @@ header{
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px 0px;
+  font-size: 2vw;
 }
 
 #top-list li{
   width: 25%;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #top-list li:first-child{
@@ -284,7 +281,7 @@ header{
 #popular{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 0 2%;
 }
 
 /* recently-played */
@@ -495,6 +492,7 @@ footer a h6{
 
   .now-playing{
     font-size: 12px;
+    margin-right: 28px;
   }
 
   footer h6{
@@ -511,5 +509,47 @@ footer a h6{
 
   .volume-panel i{
     margin: 0 5px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width:768px) {
+  /* main-content */
+  #top-list li{
+    width: 20%;
+    font-size: 1.2vw;
+  }
+  
+  /* recently-played */
+  .card{
+    width: 24%;
+  }
+
+  #recently-played,
+  #for-you,
+  #popular{
+    gap: 0 1%;
+  }
+  
+  /* footer */
+  footer a div{
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .fa-shuffle{
+    margin-right: 20px;
+  }
+
+  .fa-circle-play{
+    margin: 0 25px;
+  }
+
+  .fa-rotate-right{
+    margin-left: 20px;
+  }
+
+  .volume-panel i{
+    margin-right: 15px;
   }
 }
