@@ -65,17 +65,25 @@ ul{
   width: 50%;
 }
 
-.w-25{
-  width: 25%;
+.w-40{
+  width: 40%;
 }
 
-.w-foot{
-  width: calc((100vw - 20px) / 3);
+.w-25{
+  width: 25%;
 }
 
 /* margin */
 .mx-10{
   margin: 0 10px;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.mr-20{
+  margin-right: 20px;
 }
 
 .mt-20{
@@ -111,6 +119,10 @@ ul{
   justify-content: center;
 }
 
+.j-content-end{
+  justify-content: flex-end;
+}
+
 .j-content-around{
   justify-content: space-around;
 }
@@ -126,7 +138,7 @@ ul{
 /* ******** PAGE STYLE ******** */
 /* main */
 main{
-  height: calc(100vh - 61px);
+  height: calc(100vh - 62px);
   background-color: #141922;
   display: flex;
 }
@@ -140,6 +152,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 img[alt="logo"]{
@@ -313,8 +326,12 @@ footer{
 }
 
 footer img[alt="sinister"] {
-  max-height: 3vh;
-  max-width: 3vh;
+  height: 3vh;
+  width: 3vh;
+}
+
+.now-playing{
+  font-size: 11px;
 }
 
 footer a h5{
@@ -322,24 +339,28 @@ footer a h5{
 }
 
 footer a h6{
-  font-weight: 500;
-}
-
-.player{
-  text-align: center;
+  font-weight: 600;
 }
 
 .player i{
   color: #fff;
 }
 
+.fa-shuffle{
+  margin-right: 12px;
+}
+
 .fa-circle-play{
-  margin: 0 10px;
+  margin: 0 20px;
+}
+
+.fa-rotate-right{
+  margin-left: 12px;
 }
 
 .player-panel,
 .volume-panel{
-  font-size: 8px;
+  font-size: 9px;
   color: #fff;
 }
 
@@ -355,6 +376,7 @@ footer a h6{
 .player-bar{
   background-color: #7e7e7e;
   width: 62%;
+  margin: 0 2vw;
 }
 
 .player-bar-over,
@@ -373,9 +395,14 @@ footer a h6{
   height: 100%;
 }
 
+.volume-panel i{
+  margin-right: 10px;
+}
+
 .volume-bar{
   background-color: #7e7e7e;
-  width: 52%;
+  width: 15vw;
+  margin-right: 2px;
 }
 
 /* ***** MEDIA QUERY ***** */
@@ -446,10 +473,43 @@ footer a h6{
     font-size: 700;
   }
 
+  /* container */
+  .container{
+    padding: 3vw;
+  }
+
   /* main content */
   #main-content{
     width: calc(100vw - 200px);
   }
 
+  #top-list li{
+    width: 33%;
+  }
 
+  /* footer */
+  footer img[alt="sinister"] {
+    max-height: 6vw;
+    max-width: 6vw;
+  }
+
+  .now-playing{
+    font-size: 12px;
+  }
+
+  footer h6{
+    display: inline-block;
+  }
+
+  .player-bar{
+    width: 75%;
+  }
+
+  .volume-panel{
+    justify-content: center;
+  }
+
+  .volume-panel i{
+    margin: 0 5px;
+  }
 }
