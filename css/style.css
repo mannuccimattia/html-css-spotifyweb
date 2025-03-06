@@ -468,9 +468,32 @@ footer a h6{
   border: none;
   color: #fff;
   font-size: 10px;
+  cursor: pointer;
 }
 
 /* ***** MEDIA QUERY ***** */
+/* MICRO PLAYER */
+@media screen and (max-height: 250px), screen and (max-width: 250px){
+  main,
+  .artist-panel,
+  .volume-panel{
+    display: none;
+  }  
+
+  footer{
+    height: 100vh;
+  }
+
+  .player-buttons{
+    width: 100%;
+  }
+
+  .player i{
+    font-size: 12px;
+  }
+
+}
+
 /*  EXTRA SMALL */
 @media screen and (min-width:250px) and (max-width:450px) {
   #top-list li{
@@ -510,6 +533,10 @@ footer a h6{
     font-size: 20px;
   }
 
+  .player-bar{
+    width: 80%;
+  }
+
   .volume-panel i{
     margin-right: 0;
   }
@@ -523,7 +550,7 @@ footer a h6{
     position: absolute;
     width: 80px;
     bottom: 50px;
-    right: -5vh;
+    right: -30px;
   }
 }
 
