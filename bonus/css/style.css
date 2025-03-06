@@ -552,12 +552,14 @@ footer a h6{
 #list-title{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 #songs-list ul li{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 5px 0;
   ;
 }
@@ -575,7 +577,7 @@ footer a h6{
 }
 
 /* ************************************ */
-/* ***** MEDIA QUERIES INDEX.HTML ***** */
+/* ********** MEDIA QUERIES *********** */
 /* ************************************ */
 /* MICRO PLAYER */
 @media screen and (max-height: 250px), screen and (max-width: 250px){
@@ -886,6 +888,19 @@ footer a h6{
     display: none;
   }
 
-
+  #playlist-buttons .right-col  span{
+    display: none;
+  }
 }
+
+/* TABLET */
+@media screen and (min-width:780px){
+  #songs-list .title-col img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+  }
+}
+
 
